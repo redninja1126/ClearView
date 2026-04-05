@@ -169,13 +169,19 @@
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <form id="contact-form" onsubmit="handleSubmit(event)">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button class="btn">Send Message</button>
-  </form>
+ <form action="https://formsubmit.co/redninja1126p@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <input type="hidden" name="_subject" value="New Clearview Inquiry!">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button class="btn">Send Message</button>
+</form>
+
 </section>
+textarea placeholder="Your Message" required></textarea>
 
 <footer>
   <p>© 2026 Clearview Landscape Construction LLC</p>
